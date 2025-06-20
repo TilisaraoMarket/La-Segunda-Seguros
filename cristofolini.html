@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Segunda | Agustín Cristofolini - Productor Asesor Directo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f4f6fa;
+            min-height: 100vh;
+            color: #003876;
+        }
+        .main-header {
+            background: #003876;
+            color: #fff;
+            padding: 32px 0 18px 0;
+            text-align: center;
+            border-bottom: 6px solid #e30613;
+        }
+        .main-header .logo {
+            background: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 10px;
+        }
+        .main-header .logo img {
+            max-width: 170px;
+            max-height: 50px;
+        }
+        .main-header h1 {
+            font-size: 2.1em;
+            font-weight: 700;
+            margin: 10px 0 6px 0;
+            letter-spacing: -1px;
+        }
+        .main-header .subtitle {
+            font-size: 1.1em;
+            font-weight: 400;
+            color: #e0e6ef;
+            margin-bottom: 0;
+        }
+        .container {
+            max-width: 420px;
+            margin: 36px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(0,56,118,0.10);
+            padding: 32px 24px 28px 24px;
+            text-align: center;
+            border-top: 4px solid #e30613;
+        }
+        .contact-info {
+            background: #f4f6fa;
+            color: #003876;
+            border-radius: 10px;
+            padding: 18px 0 10px 0;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px #001b3640;
+        }
+        .contact-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #003876;
+        }
+        .contact-info p {
+            margin: 0 0 6px 0;
+            font-size: 1em;
+        }
+        .contact-info a {
+            color: #003876;
+            text-decoration: underline;
+        }
+        .cta {
+            display: inline-block;
+            background: #e30613;
+            color: #fff;
+            border-radius: 25px;
+            padding: 13px 36px;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 2px 8px #001b3640;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.2s, color 0.2s, transform 0.15s;
+            border: none;
+        }
+        .cta:hover {
+            background: #003876;
+            color: #fff;
+        }
+        .benefits {
+            margin: 24px 0 0 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+        }
+        .benefits li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1em;
+            background: #f4f6fa;
+            border-radius: 8px;
+            padding: 8px 16px;
+            color: #003876;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95em;
+            margin: 40px 0 10px 0;
+        }
+        .chatbox {
+            margin: 32px auto 0 auto;
+            background: #f4f6fa;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px #001b3640;
+            padding: 22px 12px 18px 12px;
+            max-width: 370px;
+            text-align: center;
+        }
+        .chatbox-title {
+            font-weight: 700;
+            color: #003876;
+            margin-bottom: 16px;
+            font-size: 1.1em;
+        }
+        .chatbox-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .chatbox-options button {
+            background: #e30613;
+            color: #fff;
+            border: none;
+            border-radius: 22px;
+            padding: 12px 18px;
+            font-size: 1em;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, transform 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            outline: none;
+            box-shadow: 0 1px 4px #001b3622;
+        }
+        .chatbox-options button:hover {
+            background: #003876;
+            color: #fff;
+        }
+        .chatbox-options button:focus {
+            outline: 2px solid #e30613;
+            outline-offset: 2px;
+            background: #003876;
+        }
+        .chatbox-options button:active {
+            transform: scale(0.97);
+        }
+        .cta:focus {
+            outline: 2px solid #e30613;
+            outline-offset: 2px;
+            background: #003876;
+        }
+        .cta:active {
+            transform: scale(0.97);
+        }
+        .container, .contact-info, .chatbox, .map-section, .privacy-section {
+            box-shadow: 0 2px 8px #001b3640;
+        }
+        .map-section iframe {
+            filter: grayscale(10%) contrast(1.1);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 14px 2vw; }
+            .main-header { padding: 18px 0 10px 0; }
+            .main-header .logo img { max-width: 110px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo de la segunda.png" alt="Logo La Segunda">
+        </div>
+        <h1>Agustín Cristofolini</h1>
+        <div class="subtitle">Productor Asesor Directo<br>La Segunda Seguros</div>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contacto directo</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 25 de Mayo 980, Tilisarao, San Luis</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+5492664563959">+54 9 266 456-3959</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5492664563959" style="color:#25d366;text-decoration:none;">WhatsApp</a></p>
+        </div>
+        <a href="https://www.lasegunda.com.ar/" class="cta" target="_blank">Cotizá tu seguro</a>
+        <ul class="benefits">
+            <li><i class="fas fa-car" style="color: #e30613;"></i> Auto</li>
+            <li><i class="fas fa-home" style="color: #e30613;"></i> Hogar</li>
+            <li><i class="fas fa-heartbeat" style="color: #e30613;"></i> Vida</li>
+            <li><i class="fas fa-shield-alt" style="color: #e30613;"></i> Más opciones</li>
+        </ul>
+        <div class="chatbox">
+            <div class="chatbox-title">¿En qué podemos ayudarte?</div>
+            <div class="chatbox-options">
+                <button onclick="sendWA('Hola Agustín, quiero cotizar un seguro de auto.')" aria-label="Cotizar seguro de auto"><i class='fas fa-car'></i> Cotizar seguro de auto</button>
+                <button onclick="sendWA('Hola Agustín, quiero cotizar un seguro de hogar.')" aria-label="Cotizar seguro de hogar"><i class='fas fa-home'></i> Cotizar seguro de hogar</button>
+                <button onclick="sendWA('Hola Agustín, quiero cotizar un seguro de vida.')" aria-label="Cotizar seguro de vida"><i class='fas fa-heartbeat'></i> Cotizar seguro de vida</button>
+                <button onclick="sendWA('Hola Agustín, necesito asesoramiento personalizado.')" aria-label="Asesoramiento personalizado"><i class='fas fa-user-tie'></i> Asesoramiento personalizado</button>
+            </div>
+        </div>
+        <div class="map-section" aria-label="Ubicación en Google Maps">
+            <h2 style="color:#003876; font-size:1.1em; margin:32px 0 12px 0;">¿Dónde encontrarme?</h2>
+            <iframe title="Ubicación oficina Agustín Cristofolini" src="https://www.google.com/maps?q=25+de+Mayo+980,+Tilisarao,+San+Luis,+Argentina&output=embed" width="100%" height="220" style="border:0; border-radius:12px; box-shadow:0 2px 8px #001b3640;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="privacy-section" aria-label="Aviso de privacidad y seguridad de datos">
+            <h3 style="color:#e30613; font-size:1em; margin:28px 0 8px 0;">Privacidad y Seguridad</h3>
+            <p style="color:#003876; font-size:0.98em; margin:0 0 8px 0;">Nunca se solicitarán datos bancarios ni información confidencial por este sitio. Tu consulta es 100% segura y privada.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <span>© 2025 La Segunda Seguros. Sitio exclusivo para clientes de Agustín Cristofolini.</span>
+    </div>
+    <script>
+    function sendWA(msg) {
+        const phone = '5492664563959';
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+        window.open(url, '_blank');
+    }
+    </script>
+</body>
+</html>
